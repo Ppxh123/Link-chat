@@ -1,0 +1,38 @@
+# Java
+target/
+*.class
+*.jar
+*.war
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+
+# Node
+node_modules/
+dist/
+.temp/
+
+# Environment
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# MinIO
+minio-data/
+
+# Cache
+.cache/

@@ -1,0 +1,27 @@
+// === LinkChat 动画系统 ===
+// 参考：Linear（快速干脆）、Claude Desktop（柔和过渡）
+
+:root {
+  // 缓动函数
+  --lc-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --lc-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --lc-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --lc-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  // 时长
+  --lc-duration-75: 75ms;
+  --lc-duration-100: 100ms;
+  --lc-duration-150: 150ms;
+  --lc-duration-200: 200ms;
+  --lc-duration-300: 300ms;
+  --lc-duration-500: 500ms;
+  --lc-duration-700: 700ms;
+
+  // 消息动画
+  --lc-msg-anim-duration: 200ms;
+  --lc-msg-anim-distance: 12px;
+
+  // 模态框动画
+  --lc-modal-anim-duration: 200ms;
+  --lc-modal-anim-scale: 0.96;
+}

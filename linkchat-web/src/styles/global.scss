@@ -1,0 +1,82 @@
+// === LinkChat 全局样式 ===
+@use '../design-tokens/index.scss';
+
+// 字体
+@import './fonts';
+@import './reset';
+
+// ============ 根元素 ============
+html, body, #app {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#app {
+  font-family: var(--lc-font-family);
+  color: var(--lc-text-primary);
+  background: var(--lc-bg-app);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ============ 滚动条 ============
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--lc-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lc-scrollbar-thumb);
+  border-radius: 3px;
+
+  &:hover {
+    background: var(--lc-text-tertiary);
+  }
+}
+
+// Firefox 滚动条
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--lc-scrollbar-thumb) var(--lc-scrollbar-track);
+}
+
+// ============ 选中颜色 ============
+::selection {
+  background: var(--lc-primary-light);
+  color: var(--lc-text-primary);
+}
+
+// ============ 全局交互工具类 ============
+.lc-interactive {
+  transition:
+    background-color var(--lc-duration-150) var(--lc-ease-out),
+    color var(--lc-duration-150) var(--lc-ease-out),
+    border-color var(--lc-duration-150) var(--lc-ease-out),
+    box-shadow var(--lc-duration-150) var(--lc-ease-out),
+    opacity var(--lc-duration-150) var(--lc-ease-out);
+}
+
+// 禁用文本选中
+.lc-no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+// 文本截断
+.lc-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 焦点环
+.lc-focus-ring:focus-visible {
+  outline: 2px solid var(--lc-border-focus);
+  outline-offset: 2px;
+  border-radius: var(--lc-radius-sm);
+}

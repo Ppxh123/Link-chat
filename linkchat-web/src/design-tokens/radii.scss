@@ -1,0 +1,26 @@
+// === LinkChat 圆角系统 ===
+// 参考：腾讯元宝（偏大圆角）、Notion（适中）
+
+:root {
+  --lc-radius-none: 0;
+  --lc-radius-xs: 4px;
+  --lc-radius-sm: 8px;
+  --lc-radius-md: 12px;
+  --lc-radius-lg: 16px;
+  --lc-radius-xl: 20px;
+  --lc-radius-2xl: 24px;
+
+  // 专用
+  --lc-radius-msg: 18px;        // 消息气泡圆角
+  --lc-radius-msg-tail: 8px;    // 气泡小尾巴
+  --lc-radius-msg-image: 16px;  // 图片消息圆角
+  --lc-radius-input: 20px;      // 输入框圆角（元宝风格）
+  --lc-radius-full: 9999px;     // 完全圆角
+
+  // 设计系统组件
+  --lc-radius-btn: 12px;
+  --lc-radius-card: 16px;
+  --lc-radius-modal: 24px;
+  --lc-radius-avatar: 9999px;
+  --lc-radius-badge: 9999px;
+}

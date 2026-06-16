@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active: test
+
+  datasource:
+    url: jdbc:h2:mem:linkchat_test;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=true;INIT=RUNSCRIPT FROM 'classpath:schema-h2.sql'
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  sql:
+    init:
+      mode: never
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 5000ms
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
+
+jwt:
+  secret: TestSecretKeyForJWTTokenGenerationMustBeAtLeast256BitsLong!!
+  expiration: 86400000
+
+minio:
+  endpoint: http://localhost:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: linkchat-test
+
+logging:
+  level:
+    com.linkchat: DEBUG
+    org.springframework.security: WARN
+    org.springframework.web: WARN

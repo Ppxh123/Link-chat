@@ -1,0 +1,24 @@
+// === LinkChat 间距系统 ===
+// 基于 4px 网格
+
+:root {
+  --lc-space-0: 0;
+  --lc-space-1: 4px;
+  --lc-space-2: 8px;
+  --lc-space-3: 12px;
+  --lc-space-4: 16px;
+  --lc-space-5: 20px;
+  --lc-space-6: 24px;
+  --lc-space-7: 28px;
+  --lc-space-8: 32px;
+  --lc-space-9: 36px;
+  --lc-space-10: 40px;
+  --lc-space-12: 48px;
+  --lc-space-14: 56px;
+  --lc-space-16: 64px;
+  --lc-space-20: 80px;
+
+  // 布局专用
+  --lc-nav-width: 80px;
+  --lc-conv-width: 320px;
+}

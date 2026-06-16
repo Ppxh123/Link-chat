@@ -1,0 +1,93 @@
+// === LinkChat 颜色系统 ===
+// 参考：腾讯元宝 / Linear / Notion
+
+// ============ LIGHT THEME（默认） ============
+:root,
+[data-theme='light'] {
+  // Brand
+  --lc-primary: #10B981;
+  --lc-primary-hover: #059669;
+  --lc-primary-active: #047857;
+  --lc-primary-light: #D1FAE5;
+  --lc-primary-subtle: rgba(16, 185, 129, 0.08);
+
+  // Surfaces
+  --lc-bg-app: #F7F8FA;
+  --lc-bg-card: #FFFFFF;
+  --lc-bg-hover: #F3F4F6;
+  --lc-bg-active: #E5E7EB;
+  --lc-bg-input: #F9FAFB;
+  --lc-bg-nav: rgba(248, 250, 252, 0.85);
+  --lc-bg-overlay: rgba(15, 23, 42, 0.45);
+
+  // Borders
+  --lc-border: #E5E7EB;
+  --lc-border-light: #F3F4F6;
+  --lc-border-focus: #10B981;
+
+  // Text
+  --lc-text-primary: #111827;
+  --lc-text-secondary: #6B7280;
+  --lc-text-tertiary: #9CA3AF;
+  --lc-text-inverse: #FFFFFF;
+  --lc-text-link: #10B981;
+
+  // Semantic
+  --lc-success: #22C55E;
+  --lc-warning: #F59E0B;
+  --lc-danger: #EF4444;
+  --lc-info: #3B82F6;
+
+  // Message bubbles
+  --lc-msg-self-bg: #10B981;
+  --lc-msg-self-text: #FFFFFF;
+  --lc-msg-other-bg: #F3F4F6;
+  --lc-msg-other-text: #111827;
+
+  // Scrollbar
+  --lc-scrollbar-thumb: #D1D5DB;
+  --lc-scrollbar-track: transparent;
+
+  // Shadows (defined in shadows.scss for consistency)
+}
+
+// ============ DARK THEME ============
+[data-theme='dark'] {
+  // Brand
+  --lc-primary: #34D399;
+  --lc-primary-hover: #10B981;
+  --lc-primary-active: #059669;
+  --lc-primary-light: #064E3B;
+  --lc-primary-subtle: rgba(52, 211, 153, 0.12);
+
+  // Surfaces
+  --lc-bg-app: #0F172A;
+  --lc-bg-card: #1E293B;
+  --lc-bg-hover: #334155;
+  --lc-bg-active: #475569;
+  --lc-bg-input: #1E293B;
+  --lc-bg-nav: rgba(30, 41, 59, 0.85);
+  --lc-bg-overlay: rgba(0, 0, 0, 0.6);
+
+  // Borders
+  --lc-border: #334155;
+  --lc-border-light: #1E293B;
+  --lc-border-focus: #34D399;
+
+  // Text
+  --lc-text-primary: #F1F5F9;
+  --lc-text-secondary: #94A3B8;
+  --lc-text-tertiary: #64748B;
+  --lc-text-inverse: #0F172A;
+  --lc-text-link: #34D399;
+
+  // Message bubbles
+  --lc-msg-self-bg: #34D399;
+  --lc-msg-self-text: #0F172A;
+  --lc-msg-other-bg: #334155;
+  --lc-msg-other-text: #F1F5F9;
+
+  // Scrollbar
+  --lc-scrollbar-thumb: #475569;
+  --lc-scrollbar-track: transparent;
+}
